@@ -10,20 +10,18 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class FragmentLeft extends Fragment{
-//	private CallBack callBack;
-	private WoQuActivity activity;
+	private CallBack callBack;
+//	private WoQuActivity activity;
 	
 	@Override
 	public void onAttach(Activity activity) {
 		// TODO Auto-generated method stub
 		super.onAttach(activity);
 
-//		callBack = (CallBack) getActivity();
-		this.activity = (WoQuActivity) activity;
+		callBack = (CallBack) getActivity();
+//		this.activity = (WoQuActivity) activity;
 		
 	}
 	/*@Override
@@ -42,9 +40,9 @@ public class FragmentLeft extends Fragment{
 			
 			@Override
 			public void onClick(View v) {
-//				callBack.getString("传递的数据");
-				activity.getString("dsfsdf");
-				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
+				callBack.getString("传递的数据");
+//				activity.getString("dsfsdf");
+//				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
 			}
 		});
 		Button textView_left4 = (Button) view.findViewById(R.id.textView_left04);
@@ -52,9 +50,9 @@ public class FragmentLeft extends Fragment{
 			
 			@Override
 			public void onClick(View v) {
-//				callBack.getString("传递的数据");
-				activity.getString("dsfsdf");
-				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
+				callBack.getString("传递的数据");
+//				activity.getString("dsfsdf");
+//				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
 			}
 		});
 		Button textView_left1 = (Button) view.findViewById(R.id.textView_left01);
@@ -62,9 +60,9 @@ public class FragmentLeft extends Fragment{
 			
 			@Override
 			public void onClick(View v) {
-//				callBack.getString("传递的数据");
-				activity.getString("dsfsdf");
-				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
+				callBack.getString("传递的数据");
+//				activity.getString("dsfsdf");
+//				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
 			}
 		});
 		Button textView_left2 = (Button) view.findViewById(R.id.textView_left02);
@@ -72,9 +70,9 @@ public class FragmentLeft extends Fragment{
 			
 			@Override
 			public void onClick(View v) {
-//				callBack.getString("传递的数据");
-				activity.getString("dsfsdf");
-				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
+				callBack.getString("传递的数据");
+//				activity.getString("dsfsdf");
+//				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
 			}
 		});
 		Button textView_left3 = (Button) view.findViewById(R.id.textView_left03);
@@ -82,9 +80,9 @@ public class FragmentLeft extends Fragment{
 			
 			@Override
 			public void onClick(View v) {
-//				callBack.getString("传递的数据");
-				activity.getString("dsfsdf");
-				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
+				callBack.getString("传递的数据");
+//				activity.getString("dsfsdf");
+//				Toast.makeText(activity, "点击左侧textView", Toast.LENGTH_SHORT).show();
 			}
 		});
 		return view;
@@ -92,7 +90,7 @@ public class FragmentLeft extends Fragment{
 
 	
 	
-//	public interface CallBack {
-//		void getString(String text);
-//	}
+	public interface CallBack {
+		void getString(String text);
+	}
 }

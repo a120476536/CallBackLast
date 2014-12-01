@@ -1,5 +1,10 @@
 package com.qiao.callbacklast;
 
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.CanvasTransformer;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
+import com.qiao.callbacklast.FragmentLeft.CallBack;
+
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,12 +15,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.CanvasTransformer;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
-//import com.qiao.callbacklast.FragmentLeft.CallBack;
 
-public class WoQuActivity extends SlidingFragmentActivity implements OnClickListener/*,CallBack*/{
+public class WoQuActivity extends SlidingFragmentActivity implements OnClickListener,CallBack{
 	private static final String TAG="WoQuActivity";
 	private SlidingMenu sm = null;
 	private CanvasTransformer mTransformer;  
