@@ -54,7 +54,7 @@ public class WoQuActivity extends SlidingFragmentActivity implements OnClickList
         sm.setFadeDegree(0.75f);
         sm.setMode(SlidingMenu.LEFT_RIGHT);
 //        sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-        sm.setBackgroundImage(R.drawable.ic_launcher);
+        sm.setBackgroundImage(R.drawable.img_frame_background);
         sm.setBehindWidth((int)(getWindowManager().getDefaultDisplay().getWidth() / 1.5));
 //        sm.setBehindCanvasTransformer(mTransformer);
         sm.setAboveCanvasTransformer(mTransformer);
